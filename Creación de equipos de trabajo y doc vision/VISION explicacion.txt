@@ -1,0 +1,247 @@
+========================================================================
+                              V I S I O N
+========================================================================
+
+1. Introducción
+    1.1. Propósito
+    1.2. Alcance
+    1.3. Definiciones, Acrónimos y Abreviaciones
+    1.5. Descripción global
+2. Posicionamiento
+    2.1. Oportunidad de negocio
+    2.2. Determinación del problema
+    2.3. Determinación de la posición del producto
+3. Descripción de los stakeholders y usuarios
+    3.1. Resumen de los stakeholders
+    3.2. Resumen de los usuarios
+    3.3. Ambiente del usuario
+    3.4. Stakeholders claves / Necesidades de los usuarios (OPCIONAL)
+    3.5. Alternativas y Competidores (OPCIONAL)
+        3.5.1. <Competidor>
+4. Descripción del Producto (OPCIONAL)
+    4.1. Perspectivas del producto (OPCIONAL)
+    4.2. Licenciamiento e Instalación (OPCIONAL)
+5. Características del Producto
+    5.1. <Caracteristica>
+6. Restricciones
+7. Rangos de calidad (OPCIONAL)
+8. Precedencia y Prioridad (OPCIONAL)
+9. Otros Requerimientos del Producto (OPCIONAL)
+    9.1. Requerimientos del Sistema (OPCIONAL)
+    9.2. Requerimientos de Rendimiento (OPCIONAL)
+
+
+========================================================================
+                          EXPLICACIÓN BREVE
+========================================================================
+
+N O T A   I M P O R T A N T E:
+
+"SI NO VA A REDACTAR ALGÚN PUNTO OPCIONAL DEL DOCUMENTO, ELIMINARLO DEL
+ÍNDICE DEL DOCUMENTO FINAL, ES DECIR, NO DEJARLO VACÍO SINO SIMPLEMENTE
+ELIMINARLO DEL TEMARIO."
+
+
+[ El propósito de este documento es coleccionar, analizar y definir en a
+un alto-nivel las necesidades y características del Sistema. Este se en-
+foca en las necesidades de los stakeholders, de los usuarios principales 
+y del por qué? existen estas necesidades. ]
+
+1. Introducción
+
+    1.1. Propósito
+    
+         [ Especificar el propósito del Sistema a implementar y la fina-
+         lidad de su implementación. ]
+    
+    1.2. Alcance
+    
+         [ Una breve descripción de las tareas que el Sistema a  imple -
+         mentar va a lograr. ]
+    
+    1.3. Definiciones, Acrónimos y Abreviaciones
+    
+         [ Esta subsección debería proveer las definiciones de todos los
+         términos, acrónimos y abreviaciones requeridas para interpretar
+         apropiadamente este documento. ]
+         [ Esta información puede ser proveída por referencia al Glosa -
+         rio del Proyecto. ]
+    
+    1.4. Descripción global
+    
+         [ Esta subsección debería describir sobre los módulos que se 
+         desean implementar en el Sistema o alguna funcionalidad añadi -
+         da, si el cliente así lo requiere. ]
+    
+2. Posicionamiento
+
+    2.1. Oportunidad de negocio
+    
+         [ Brevemente describir la oportunidad de negocio que puede sur-
+         gir en este proyecto. ]
+    
+    2.2. Determinación del problema
+    
+         [ Proveer un resumen de determinados problemas que pueden ser 
+         resueltos por este proyecto, por cada problema es una tabla, 
+         proveída en el template. ]
+         
+         --------------------------------------------------------------
+        | Problema  | [ Describir el problema ]                        |
+         --------------------------------------------------------------
+        | Afectados | [ Los stakeholders afectados por el problema ]   |
+         --------------------------------------------------------------
+        | Impacto   | [ Cuál es el impacto del problema ]              |
+         --------------------------------------------------------------
+        | Solución  | [ Presentar una solución y los beneficios que    |
+        |           | trae ésta. ]                                     |
+         --------------------------------------------------------------
+    
+    2.3. Determinación de la posición del producto
+    
+         --------------------------------------------------------------
+        | ¿Para quién?        | [ Nombre del cliente principal ]       |
+         --------------------------------------------------------------
+        | Nombre del Producto | [ Mencionar el nombre del Sistema ]    |
+         --------------------------------------------------------------
+        | ¿Qué es?            | [ Descripción del producto ]           |
+         --------------------------------------------------------------
+    
+3. Descripción de los stakeholders y usuarios
+    3.1. Resumen de los stakeholders
+    
+         [ Es necesario identificar e involucrar a todos los stackhol -
+         ders como parte del procesos del Modelamiento de Requerimien -
+         tos. Los stakeholders son los que se benefician del Sistema sea
+         esto de manera directa o indirecta. ]
+         
+         --------------------------------------------------------------
+        | Cargo           | Representa             | Rol               |
+         --------------------------------------------------------------
+        | [ Nombre del    | [ Qué representaría    | [ Descripción del |
+        | tipo de stake-  | en el sistema ]        | rol ]             |
+        | holder ]        |                        |                   |
+         --------------------------------------------------------------
+         
+    3.2. Resumen de los usuarios
+    
+         [ Las personas que utilizarían de manera directa el Sistema, 
+         dependiendo de los roles que éstos tengan. ]
+    
+         --------------------------------------------------------------
+        | Nombre          | Descripción                                |
+         --------------------------------------------------------------
+        | [ Nombre del    | [ Qué representa para el sistema]          |
+        | tipo de usuario]|                                            |
+        |                 |                                            |
+        |                 |                                            |
+         --------------------------------------------------------------
+         
+    3.3. Ambiente del usuario
+    
+         [ Detallar el ambiente de trabajo del usuario principal. He a -
+         quí algunas preguntas:
+         - Número de personas involucradas en el negocio? Esto puede 
+            cambiar?
+         - Cuán largo es el ciclo de la tarea? La cantidad de tiempo en 
+            cada actividad? Esto puede cambiar?
+         - Qué plataforma del S.O. usa? Posibilidad de usar nuevas pla -
+            taformas?
+         - Qué aplicaciones usa? El sistema que se desea se necesita in-
+            tegrar con las aplicaciones existentes en el momento? ]
+    
+    3.4. Stakeholders claves / Necesidades de los usuarios (OPCIONAL)
+    
+        [ Listar los problemas claves con las soluciones existentes que 
+        el stakeholder perciba. Clarificar los siguientes temas por cada
+        problema:
+        - CUáles son las razones para este problema?
+        - Cómo es solucionado ahora?
+        - Qué soluciones desea el stakeholder? ]
+    
+         --------------------------------------------------------------
+        | Necesidad             |                                      |
+         --------------------------------------------------------------
+        | Prioridad             |                                      |
+         --------------------------------------------------------------
+        | Interesados           |                                      |
+         --------------------------------------------------------------
+        | Solución actual       |                                      |
+         --------------------------------------------------------------
+        | Soluciones propuestas |                                      |
+         --------------------------------------------------------------
+    
+    3.5. Alternativas y Competidores (OPCIONAL)
+    
+        [ Mencionar si el producto deseado por el cliente ya existe en 
+        el mercado, listar algunos especialmente los más usados y los 
+        que el cliente conoce. ]
+    
+        3.5.1. <Competidor>
+        3.5.2. <Competidor>
+        
+4. Descripción del Producto (OPCIONAL)
+    4.1. Perspectivas del producto
+    
+        [ En esta subsección se debería describir al producto desde la 
+        perspectiva de otros productos similares y desde lo que el usua-
+        rio percibe en su ambiente, es decir, una descripción más comer-
+        cial de lo que se desea desarrollar, mostrando los módulos y/o 
+        funcionalidades que el mismo traerá, la mejor manera de realizar
+        esto es mediante un diagrama de flujos.
+          Mostrar también si el Sistema va a ser implementado desde cero, 
+        o es un añadido a algún otro sistema existente, sea éste Propie-
+        tario u Open Source ]
+    
+    4.2. Licenciamiento e Instalación
+        
+        [ Es necesario definir esto, debido a que si existen restriccio-
+        nes de Licenciamiento propietario, existe un impacto en el es -
+        fuerzo requerido en la implementación, debido a que se deben 
+        considerar seguridades de contraseñas, licenciamiento en línea,
+        etc. 
+          Los requerimientos de instalación también afectan, debido a 
+        que se deben considerar los diversos escenarios en los que se va
+        instalar la aplicación como el S.O. por ejemplo. ]
+    
+5. Características del Producto
+    
+    [ Enlistar y realizar una breve descripción de las características 
+    que se desean implementar, pedidas por el cliente.
+      El nivel de detalle que debe existir en esta sección, debe ser só-
+    lo general, tal como para entender lo que se desea realizar en el 
+    sistema. ]
+    
+    5.1. <Caracteristica>
+    
+6. Restricciones
+
+    [ Describir las restricciones existentes por parte del cliente (sean
+    éstas del tipo de hardware del que están provistos, conocimientos, 
+    etc. ). ]
+
+7. Rangos de calidad (OPCIONAL)
+
+    [ Definir los rangos de calidad para el rendimiento, usabilidad y   
+    similares características que no fueron capturadas en el conjunto de
+    las características del producto. ]
+
+8. Precedencia y Prioridad (OPCIONAL)
+
+    [ Definir las prioridades de las diferentes características del sis-
+    tema. ]
+
+9. Otros Requerimientos del Producto (OPCIONAL)
+    9.1. Requerimientos del Sistema
+    
+        [ Definir los requerimientos necesarios para soportar la aplica-
+        ción. Éstos pueden ser: el S.O. donde se va a instalar, la red,
+        memoria, configuraciones y compañía de software. ]
+    
+    9.2. Requerimientos de Rendimiento
+    
+        [ Usar esta sección para detallar los requerimientos de rendi -
+        miento. Los temas de rendimiento que se pueden estar mencionando
+        son: tiempo de carga para el usuario, ancho de banda disponible 
+        o capacidad de comunicación, confiabilidad o tiempos de respues-
+        tas bajo una variedad de condiciones. ]
