@@ -1,6 +1,6 @@
 <?php
 
-$server = 'localhost:8080';
+$server = 'localhost';
 $username = 'root';
 $password = '';
 $database = 'user';
