@@ -31,20 +31,20 @@
 <html>
 <head>    
 	<meta charset="utf-8">
-	<title>Bodegas AVG</title>
+	<title>Terminal Terrestre</title>
 	<link rel="stylesheet" href="../../css/bootstrap.css">
 </head>
 <body background="../../img/fondo.jpg" style="background-repeat: no-repeat; background-position: center center;">
 	<section class="title">
-		<h1>Bodegas AVG</h1>
+		<h1>Terminal Terrestre</h1>
 	</section>
 <nav class="navegacion">
 		<ul class="menu">
 
 			<li class="first-item">
-				<a href="index2.php">
-					<img src="../../img/home.jpg" alt="" class="imagen">
-					<span class="text-item">Inicio</span>
+				<a href="index3.php">
+					<img src="../../img/noticia.png" alt="" class="imagen">
+					<span class="text-item">Noticias</span>
 					<span class="down-item"></span>
 				</a>
 			</li>
@@ -58,47 +58,33 @@
 					<span class="down-item"></a></span>
 				</a>
 			</li>
-
-				<li>
-				<a href="listado.php">
-					<img src="../../img/blog.jpg" alt="" class="imagen">
-					<span class="text-item">Listado de Usuarios</span>
+			<li>
+				<a href="ticket.php">
+					<img src="../../img/boleto.png" alt="" class="imagen">
+					<span class="text-item">Ticket</span>
 					<span class="down-item"></span>
 				</a>
 			</li>
 
 			<li>
-				<a href="capacidad.php">
-					<img src="../../img/servicios.jpg" alt="" class="imagen">
-					<span class="text-item">Capacidad de Bodegas</span>
+				<a href="rutas.php">
+					<img src="../../img/rutas.png" alt="" class="imagen">
+					<span class="text-item">Rutas</span>
 					<span class="down-item"></span>
 				</a>
 			</li>
 
-
+			<li>
+				<a href="boleteria.php">
+					<img src="../../img/boleteria.png" alt="" class="imagen">
+					<span class="text-item">Boleteria</span>
+					<span class="down-item"></span>
+				</a>
+			</li>
 		</ul>
 	</nav>
-		<section class="info">
-		<h2 align="center"><br>Expertos en Cuidar tus productos</h2><br><br>
-		<p align="center">Nuestra empresa se caracteriza por su excelente servicio y su confiabilidad</p>
-		
-		</section>
-		<br><br>
-
-		<section class="Principal">
-		<h3 align="center">Personal de seguridad calificado</h3><br><br>
-		<p align="center">Nuestra empresa se caracteriza por <br>su excelente servicio y su confiabilidad<br><br></p>
-		<img src="../../img/guardia.png" alt="" class="info1">
-		<h3 align="center"><br><br>Contamos con diferentes sucursales</h3><br><br>
-		<p align="center">Diferentes sucursales para<br>estar mas cerca de ti<br>Pedro Carbo/Guayaquil/Quito<br><br></p>
-		<img src="../../img/Mapa.jpg" alt="" class="info1">
-		<h3 align="center"><br><br>Atencion al cliente 24/7</h3><br><br>
-		<p align="center">Brindamos atencion a nuestros queridos<br>clientes a cualquier hora y dia del año<br><br></p>
-		<img src="../../img/atencionc.png" alt="" class="info1">
-		</section>
 		
 
-
-		<p><a href="../cierre.php">Cerrar Sesion</a></p>
+	
 </body>
 </html>
