@@ -75,7 +75,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="Carro_Compra.php">
+				<a href="carro.php">
 					<img src="../../img/carro.png" alt="" class="imagen">
 					<span class="text-item">Carro de compras</span>
 					<span class="down-item"></span>

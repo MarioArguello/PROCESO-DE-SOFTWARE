@@ -27,6 +27,7 @@
     }
   }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>    
@@ -35,9 +36,9 @@
 	<link rel="stylesheet" href="../../css/bootstrap.css">
 </head>
 <body background="../../img/fondo.jpg" style="background-repeat: no-repeat; background-position: center center;">
-	<section class="title">
+	<center> </br>
 		<h1>Terminal Terrestre</h1>
-	</section>
+		</center></br></br>
 <nav class="navegacion">
 		<ul class="menu">
 			<li class="first-item">
@@ -74,7 +75,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="carro_compras.php">
+				<a href="carro.php">
 					<img src="../../img/carro.png" alt="" class="imagen">
 					<span class="text-item">Carro de compras</span>
 					<span class="down-item"></span>
@@ -91,23 +92,11 @@
 
 		</ul>
 	</nav>
-	<section class="info">
-		
-		<p align="center">Bienbenido a la pagina del Terminal Terrestre de Guayaquil </p>
-		
-		</section>
-		<br><br>
-
-		<section class="Principal">
-		<h3 align="center">Tenemos personal calificado para la seguridad de los pasajeros</h3><br><br>
-		<p align="center">Nuestra empresa se caracteriza por <br>su excelente servicio y su confiabilidad<br><br></p>
 	
-		<h3 align="center"><br><br>Contamos con diferentes destinos</h3><br><br>
+		<br/><br/>
+		<h2 align="center">Bienvenido al terminal terrestre de Guayaquil </h2>
+	
 		
-		<h3 align="center"><br><br>Atencion al cliente 24/7</h3><br><br>
-		<p align="center">Brindamos atencion a nuestros queridos<br>clientes a cualquier hora y dia del año<br><br></p>
-		
-		</section>
 		
 </body>
 </html>
