@@ -1,0 +1,16 @@
+header{
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+	height: 50px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 50px;
+  font-family: 'Century Gothic';
+}

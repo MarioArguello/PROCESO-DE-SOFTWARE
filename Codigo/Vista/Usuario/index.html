@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Listado de Usuarios y trabajadores</title>
+	<script type='text/javascript' src="../js/jquery-1.7.1.min.js" > </script>
+	<script type='text/javascript'>
+	function cargarcontrolador()
+	{
+		$.post("../../Controlador/TrabajadorController.php",
+				{'opcion':'consultar'},respuesta);
+	}
+	function respuesta(arg)
+	{
+		$("#datos tbody").append(arg);
+	}
+	window.onload=cargarcontrolador;
+	</script>
+  </head>
+  <body>
+ 
+  <br/>  <h1 style="font-family:Times New Roman" align="center">Listado de Usuarios y Trabajador</h1>
+<br/>
+
+<center><button type="button" class="btn btn-outline-dark" style="font-family:Times New Roman" ><a href="new.html">Nuevo Trabajador</a></button>
+</center><br/><br/>
+
+<br />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+	<table class="table" id="datos">
+  <thead >
+    <tr style="font-family:Times New Roman" >
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Telefono</th>
+	    <th scope="col">Correo</th>
+      <th scope="col">Cedula</th>
+      <th scope="col">Usuario</th>    
+      <th scope="col">Password</th>
+      <th scope="col">Tipo</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+	
+  </body>
+</html>

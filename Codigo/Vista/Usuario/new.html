@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Registro</title>
+	  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script type='text/javascript' src="../js/jquery-1.7.1.min.js" > </script>
+   <link rel="stylesheet" href="css/estilo.css">
+<script type='text/javascript'>
+$(function(){
+		$("#guardar").click(function(){ 
+			$.post("../../Controlador/TrabajadorController.php",
+				$("#datos").serialize(),respuesta);
+			window.location.href = "..\..\php\login.php";
+		});
+	});
+	
+		
+	
+	function respuesta(arg)
+	{
+		alert(arg);
+	}
+	</script>
+  
+  </head>
+  <body>
+    <center>
+      <br/>
+      <h2 style="font-family:Times New Roman">Registro de Usuario</h2>   
+
+<form  id="datos" method="POST" >
+<br/>
+<input type="text" class="form-control" name="opcion" value="ingresar" hidden />
+  
+
+	<label for="descripcion" style="font-family:Times New Roman">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+  
+<br/>
+
+	<label for="descripcion" style="font-family:Times New Roman">Apellido</label>
+      <input type="text" class="form-control" id="apellido" name="apellido" placeholder="apellido">
+
+
+<br/>
+
+	<label for="descripcion" style="font-family:Times New Roman">Telefono</label>
+      <input align="center" type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono">
+    
+ 
+<br/>
+
+	<label for="descripcion" style="font-family:Times New Roman">Correo</label>
+      <input type="text" class="form-control" id="correo" name="correo" placeholder="correo">
+   
+      <br/>
+    <label for="descripcion" style="font-family:Times New Roman">Cedula</label>
+    <input type="text" class="form-control" id="cedula" name="cedula" placeholder="cedula">
+ 
+    <br/>
+    <label for="descripcion" style="font-family:Times New Roman">Usuario</label>
+    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario">
+    <br/>
+
+    <label for="descripcion" style="font-family:Times New Roman">Password</label>
+    <input style="margin:0px auto; display:block;" type="password" class="form-control" id="password" name="password" placeholder="Password">
+    <br/>
+      <input type="submit" class="btn2"  id="guardar" value="Guardar">
+   
+</form>
+<form class="forma2" action="..\..\php\login.php" method="post"> 
+  <input  type="submit"  class="btn2" value="Login">
+  </form>
+</center>
+
+    </body>
+</html>

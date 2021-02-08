@@ -1,6 +1,6 @@
 <<?php  
 
     require '../../php/database.php';
-    $boletos=$_POST('boletos');
-    $sql="SELECT * FROM ticket"
+    $usuarios=$_POST('usuarios');
+    $sql="SELECT * FROM usuario"
 ?>
