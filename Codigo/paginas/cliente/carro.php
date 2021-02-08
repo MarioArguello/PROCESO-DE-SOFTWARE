@@ -61,7 +61,7 @@ echo '<script>window.location="carro.php"</script>';
   }	
 
   if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT * FROM usuarios WHERE id_usuario = :id');
+    $records = $conn->prepare('SELECT * FROM usuarios WHERE Id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -85,7 +85,7 @@ echo '<script>window.location="carro.php"</script>';
 </head>
 <body background="../../img/fondo.jpg" style="background-repeat: no-repeat; background-position: center center;">
 <center> </br>
-		<h1>Terminal Terrestre</h1>
+		<h1 style=" font-family: Georgia, 'Times New Roman', serif;">Terminal Terrestre</h1>
 		</center></br></br>
 <nav class="navegacion">
 		<ul class="menu">

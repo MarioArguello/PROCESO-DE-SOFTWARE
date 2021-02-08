@@ -15,7 +15,7 @@
   }	
 
   if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT * FROM usuarios WHERE id_usuario = :id');
+    $records = $conn->prepare('SELECT * FROM usuarios WHERE Id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -37,7 +37,7 @@
 <body background="../../img/fondo.jpg" style="background-repeat: no-repeat; background-position: center center;">
 	
   		<br/><br/>
-		<h1  align="center">Terminal Terrestre</h1>
+		<h1  align="center" style=" font-family: Georgia, 'Times New Roman', serif;">Terminal Terrestre</h1>
 		<br/>	<br/>
 <nav class="navegacion">
 		<ul class="menu">
@@ -94,7 +94,7 @@
 	</nav>
 	
 	<br/><br/>
-		<h1 align="center">Mapa </h1>
+		<h1 align="center" style=" font-family: Georgia, 'Times New Roman', serif;">Mapa </h1>
 		
 	
 		<br/><br/>

@@ -1,14 +1,20 @@
 {
-  "name": "conexion",
-  "version": "1.0.0",
-  "description": "conexion mysql",
-  "main": "index.js",
+  "name": "vcspc",
+  "version": "1.0",
+  "description": "Sistema de ventas de ticket online para el terminal terrestre de Guayaquil.",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "PHP",
+    "vcs",
+    "PC"
+  ],
+  "author": "Mario Arguello",
+  "license": "GPL-3.0",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
   }
 }

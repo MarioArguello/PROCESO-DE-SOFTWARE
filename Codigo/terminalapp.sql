@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3307
--- Tiempo de generación: 05-02-2021 a las 06:50:35
+-- Tiempo de generación: 08-02-2021 a las 03:14:10
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.3.21
 
@@ -75,25 +75,26 @@ INSERT INTO `ticket` (`id`, `name`, `tiempo`, `cooperativa`, `image`, `price`) V
 
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(100) NOT NULL,
-  `apellido` varchar(100) NOT NULL,
-  `telefono` varchar(100) NOT NULL,
-  `correo` varchar(100) NOT NULL,
-  `cedula` varchar(100) NOT NULL,
-  `usuario` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `tipo` varchar(20) NOT NULL,
-  PRIMARY KEY (`id_usuario`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `apellido` varchar(50) NOT NULL,
+  `telefono` int(10) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `cedula` int(10) NOT NULL,
+  `usuario` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `password` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `tipo` varchar(50) DEFAULT 'cliente',
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `nombre`, `apellido`, `telefono`, `correo`, `cedula`, `usuario`, `password`, `tipo`) VALUES
-(1, 'Mario Antonio', 'Arguello Calle', '0982338714', 'arguellocalle@gmail.com', '0985698569', 'mariohack16', 'Anonymous15', 'cliente'),
-(2, 'Samuel', 'Arguello', '0874589632', 'samuelarguello@gmail.com', '0874589652', 'Samuel_Arguello', 'samuel', 'cliente');
+INSERT INTO `usuarios` (`Id`, `nombre`, `apellido`, `telefono`, `correo`, `cedula`, `usuario`, `password`, `tipo`) VALUES
+(40, 'Samuel', 'Arguello', 124587, 'samuel@gmail.com', 1245587, 'samuel', 'samuel', 'cliente'),
+(39, 'Juan', 'Alberto', 1245789, 'juan@gmail.com', 12457896, 'juan64', 'juan64', 'cliente'),
+(38, 'Mario', 'Arguello', 124578965, 'arguello@gmail.com', 1257855, 'mariohack167', 'mario', 'cliente');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
