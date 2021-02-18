@@ -41,5 +41,21 @@ switch($_POST['opcion'])
 				echo "Error al registrar".$objUsuario->geterror();
 			}
 		break;
+		case 'ingresar_ticket':
+			$datos['name']=$_POST['name'];
+			$datos['tiempo']=$_POST['tiempo'];
+			$datos['cooperativa']=$_POST['cooperativa'];
+			$datos['image']=$_POST['image'];
+			$datos['price']=$_POST['price'];
+		
+				if($objUsuario->nuevo_ticket($datos))
+				{
+					echo "Ticket ingresado";
+				}
+				else
+				{
+					echo "Error al registrar Ticket".$objUsuario->geterror();
+				}
+			break;
 }
 ?>

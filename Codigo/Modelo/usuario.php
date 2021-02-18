@@ -12,5 +12,11 @@ Class Usuario
 		$usuarios=$conexion->insertar('usuarios',$datos);
 		return $usuarios;
 	}
+
+	public function nuevo_ticket($datos)
+	{	$conexion=new Conexion;
+		$ticket=$conexion->insertar_ticket('ticket',$datos);
+		return $ticket;
+	}
 }
 ?>

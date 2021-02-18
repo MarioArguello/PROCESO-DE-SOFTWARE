@@ -63,5 +63,33 @@ Class conexion
 			return "Error al insertar... ".$this->error;
 		}
 	}
+	public function insertar_ticket($tabla,$datos)
+	{	
+		try {
+			$this->conectar();
+			$sql = "INSERT INTO $tabla(";
+			foreach($datos as $clave=>$valor)
+			{
+				$sql .=$clave.",";
+			}
+			$sql = substr ($sql, 0, strlen($sql) - 1).") VALUES(";
+			foreach($datos as $clave=>$valor)
+			{
+				$sql .=":".$clave.",";
+			}
+			$sql = substr ($sql, 0, strlen($sql) - 1).")";
+			$stmt = $this->dbconn->prepare($sql);
+			foreach($datos as $clave=>$valor)
+			{$clave=':'.$clave;
+			 $stmt->bindValue($clave, $valor);
+			}
+			// execute the insert statement
+			$stmt->execute();
+			return "Ticket insertados...";
+		} catch (Exception $e) {
+			$this->error= $e->getMessage();
+			return "Error al insertar el ticket... ".$this->error;
+		}
+	}
 }
 ?>
