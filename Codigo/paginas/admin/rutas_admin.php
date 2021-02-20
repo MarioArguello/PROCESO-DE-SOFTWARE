@@ -1,6 +1,6 @@
 <?php
   session_start();
-
+  // llamado de la conexión de la base de datos //
     require '../../php/database.php';
 
   if (isset($_SESSION['rol'])) {
@@ -13,7 +13,7 @@
         default:
     }
   }	
-
+ // me permite optener las Id de la tabla usuarios //
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT * FROM usuarios WHERE Id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
@@ -32,15 +32,24 @@
 <head>    
 	<meta charset="utf-8">
 	<title>Terminal Terrestre</title>
+	<!-- Stilos bootrastrap de la carpeta css-->
 	<link rel="stylesheet" href="../../css/bootstrap.css">
 </head>
-<body background="../../img/fondo.jpg" style="background-repeat: no-repeat; background-position: center center;">
+
+<body>
 	
   		<br/><br/>
+		  <!-- titulo  -->
 		<h1  align="center" style=" font-family: Georgia, 'Times New Roman', serif;">Terminal Terrestre</h1>
 		<br/>	<br/>
+
+		<!-- Menu con diseño bootstraps  -->
+		<!--El elemento HTML <nav> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación  -->
 <nav class="navegacion">
+<!--Para definir una lista desordenada en HTML utilizamos el elemento ul.  -->
 		<ul class="menu">
+<!--Para representar los elementos de la lista desordenada utilizamos el mismo elemento que con las listas ordenadas, es decir, el elemento li.  -->
+		
 			<li class="first-item">
 				<a href="index2.php">
 					<img src="../../img/noticia.png" alt="" class="imagen">
@@ -86,11 +95,13 @@
 	</nav>
 	
 	<br/><br/>
+<!--Titulo  -->
 		<h1 align="center" style=" font-family: Georgia, 'Times New Roman', serif;">Mapa </h1>
 		
 	
 		<br/><br/>
 <center>
+	<!-- Mapa de google Maps   -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63795.66151378121!2d-79.93978692089843!3d-2.0643840000000058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1612419979749!5m2!1ses!2sec" width="1100" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </center>
 <br/><br/>
