@@ -15,8 +15,9 @@
         default:
     }
   }	
-
+ // me permite optener las Id de la tabla usuarios //
   if (isset($_SESSION['user_id'])) {
+	  
     $records = $conn->prepare('SELECT * FROM usuarios WHERE Id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
@@ -35,6 +36,7 @@
 <head>
 <meta charset="utf-8">
 <title>Terminal Terrestre</title>
+	<!-- Stilos bootrastrap de la carpeta css-->
 <link rel="stylesheet" href="../../css/bootstrap.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
  </head>
@@ -56,6 +58,7 @@
 			<li>
 				<a href="../../php/logout.php">
 					<img src="../../img/us.jpg" alt="" class="imagen">
+					<!-- $user['usuario'] me permite presentar el usuario en en menu de opciones -->
 					<span class="text-item"><?php if(!empty($user)): ?>Bienvenido. <?= $user['usuario']; ?>
 						<?php endif; ?>
 					</span>
@@ -91,9 +94,14 @@
 	</nav>
 
     <br/><br/><br/><br/>
+
 <div class="container" style="width:800px;">
 <br/><br/><br/>
-<?php
+	<!-- Obtengo todos los ticket que estan en la tabla ticket y los presento en orden de las id -->
+	<!-- $query - selecciono a la tabla ticket luego hago la conexion con la base de datos -->
+   <!-- obtengo los datos de la tabla ticket $row["name"] -->
+
+	<?php
 $query = "SELECT * FROM ticket ORDER BY id ASC";
 $result = mysqli_query($connect, $query);
 if(mysqli_num_rows($result) > 0)

@@ -49,6 +49,8 @@ if (isset($_SESSION['user_id'])) {
   
 <script type='text/javascript'>
 $(function(){
+	 // agregamos la id guardar del boton guardar para una ves que se de click en el boton pueda enviar los datos mediante el  //
+	  // form  id="datos"   //
 		$("#guardar").click(function(){ 
 			$.post("../../Controlador/TrabajadorController.php",
 				$("#datos").serialize(),respuesta);
@@ -125,33 +127,40 @@ $(function(){
 
 <form  id="datos" method="POST" text-align="center"  >
 <br/>
+<!--seleccionamos ingresar_ticket - del switch que esta en tabajador controller  que me permite agregar los ticket  -->
 <input type="text" class="form-control" name="opcion" value="ingresar_ticket" hidden />
-  
+  	<!-- Esta funcion la tiene el administrador, agregamos todos los atributos que tiene la tabla ticket para poder agregar un nuevo ticket  -->
 
 	<label for="descripcion" class="col-lg-4 control-label" style="font-family:Times New Roman">Nombre</label>
+	<!-- Agregamos atributo name de la tabla ticket -->
       <input type="text" class="form-control" id="name" name="name" placeholder="name">
   
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Tiempo</label>
+	<!-- Agregamos atributo tiempo de ala tabla ticket -->
       <input type="text" text-align="center" class="form-control" id="tiempo" name="tiempo" placeholder="tiempo">
 
 
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Cooperativa</label>
+	<!-- Agregamos atributo cooperativa de la tabla ticket -->
       <input align="center" type="text" class="form-control" id="cooperativa" name="cooperativa" placeholder="cooperativa">
     
  
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Imagen "Link de la imagen"</label>
+	<!-- Agregamos atributo  image de la tabla ticket -->
       <input type="text" class="form-control" id="image" name="image" placeholder="image">
    
       <br/>
     <label for="number" style="font-family:Times New Roman">Precio</label>
+	<!-- Agregamos atributo price de la tabla ticket -->
     <input type="text" class="form-control" id="price" name="price" placeholder="price">
  <br/> <br/>
+ <!--agregamos el boton guardar con la id: guardar para el momento de dar click envie los datos a la base de datos, tabla ticket -->
       <input type="submit" class="btn2"  id="guardar" value="Guardar">
    
 

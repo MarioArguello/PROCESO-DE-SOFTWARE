@@ -61,6 +61,7 @@
 		<li>
 				<a href="../../php/logout.php">
 					<img src="../../img/us.jpg" alt="" class="imagen">
+					<!-- $user['usuario'] me permite presentar el usuario en en menu de opciones -->
 					<span class="text-item"><?php if(!empty($user)): ?>Bienvenido. <?= $user['usuario']; ?>
 						<?php endif; ?>
 					</span>
@@ -69,6 +70,7 @@
 			</li>
 
 			<li>
+			
 				<a href="ticket_admin.php">
 					<img src="../../img/boleto.png" alt="" class="imagen">
 					<span class="text-item">Ticket</span>

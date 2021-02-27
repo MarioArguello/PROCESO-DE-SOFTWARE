@@ -39,44 +39,57 @@ $(function(){
 
 <form  id="datos" method="POST" >
 <br/>
+<!--seleccionamos ingresar del switch que esta en tabajador controller  que me permite agregar un nuevo usuario  -->
+
 <input type="text" class="form-control" name="opcion" value="ingresar" hidden />
   
 
 	<label for="descripcion" style="font-family:Times New Roman">Nombre</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+      <!-- Agregamos atributo nombre de la tabla usuarios  -->
+  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre">
   
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Apellido</label>
-      <input type="text" class="form-control" id="apellido" name="apellido" placeholder="apellido">
+       <!-- Agregamos atributo apellido de la tabla usuarios  -->
+  <input type="text" class="form-control" id="apellido" name="apellido" placeholder="apellido">
 
 
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Telefono</label>
-      <input align="center" type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono">
+       <!-- Agregamos atributo telefono de la tabla usuarios  -->
+  <input align="center" type="text" class="form-control" id="telefono" name="telefono" placeholder="telefono">
     
  
 <br/>
 
 	<label for="descripcion" style="font-family:Times New Roman">Correo</label>
-      <input type="text" class="form-control" id="correo" name="correo" placeholder="correo">
+      <!-- Agregamos atributo correo de la tabla usuarios  -->
+  <input type="text" class="form-control" id="correo" name="correo" placeholder="correo">
    
       <br/>
     <label for="descripcion" style="font-family:Times New Roman">Cedula</label>
+     <!-- Agregamos atributo cedula de la tabla usuarios  -->
     <input type="text" class="form-control" id="cedula" name="cedula" placeholder="cedula">
  
     <br/>
     <label for="descripcion" style="font-family:Times New Roman">Usuario</label>
+      <!-- Agregamos atributo usuario de la tabla usuarios  -->
     <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario">
     <br/>
 
     <label for="descripcion" style="font-family:Times New Roman">Password</label>
+      <!-- Agregamos atributo password de la tabla usuarios  -->
     <input style="margin:0px auto; display:block;" type="password" class="form-control" id="password" name="password" placeholder="Password">
     <br/>
+    <!--agregamos el boton guardar con la id: guardar para el momento de dar click envie los datos a la base de datos, tabla usuarios -->
+    
       <input type="submit" class="btn2"  id="guardar" value="Guardar">
    
 </form>
+ <!-- Agregamos un nuevo boton para que el usuario pueda retroceder al login -->
+    <!-- redirecciona al login -->
 <form class="forma2" action="..\..\php\login.php" method="post"> 
   <input  type="submit"  class="btn2" value="Login">
   </form>
